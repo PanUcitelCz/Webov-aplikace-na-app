@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Header from '$lib/components/Header.svelte';
 	import '../lib/css/normallize.css';
 </script>
@@ -34,11 +34,11 @@
 		grid-column-gap: 21px;
 		grid-row-gap: 21px; 
 
-		@media only screen and (min-width 641px)
+		@media only screen and (min-width $small-wide-up)
 			padding 24px
 			grid-template-columns: repeat(2, 1fr);
 
-		@media only screen and (min-width 1024px)
+		@media only screen and (min-width $xlarge-wide-up)
 			padding 24px
 			grid-template-columns: repeat(3, 1fr);
 </style>
