@@ -27,6 +27,7 @@
 <style lang="stylus">
 
     .grid
+        width 100%
         margin 0 auto
         max-width 1300px
         padding 12px
