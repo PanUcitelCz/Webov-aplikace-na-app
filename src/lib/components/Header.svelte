@@ -35,7 +35,7 @@
         <nav class="Header-nav" class:isOpen>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/">Přihlášení</a></li>
+                <li><a href="/login">Přihlášení</a></li>
                 <li><a href="/">Registrace</a></li>
             </ul>
         </nav>

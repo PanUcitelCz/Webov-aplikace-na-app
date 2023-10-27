@@ -23,22 +23,8 @@
 		padding 0
 
 	main
-		margin 0 auto
-		max-width 1300px
-		padding 12px
-		display grid
+		display flex
+		justify-content center
+		margin 30px 0
 
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(2, 1fr);
-		grid-column-gap: 21px;
-		grid-row-gap: 21px; 
-
-		@media only screen and (min-width $small-wide-up)
-			padding 24px
-			grid-template-columns: repeat(2, 1fr);
-
-		@media only screen and (min-width $xlarge-wide-up)
-			padding 24px
-			grid-template-columns: repeat(3, 1fr);
 </style>
