@@ -1,27 +1,35 @@
 <script lang="ts">
 
 	import Card from "$components/Card.svelte";
+    // heslo k databasi cGCXJCIStjvqWo2A
+    // nazev databaze Web_app
+
+    import { Auth } from '@supabase/auth-ui-svelte'
+	import { ThemeSupa } from '@supabase/auth-ui-shared'
+
+	export let data
 
 </script>
+
+<!-- src/routes/+page.svelte -->
+
+<svelte:head>
+	<title>User Management</title>
+</svelte:head>
+
+<div class="log">
+	<div class="col-6 form-widget">
+		<Auth
+			supabaseClient={data.supabase}
+			view="magic_link"
+			redirectTo={`${data.url}/auth/callback`}
+			showLinks={false}
+			appearance={{ theme: ThemeSupa, style: { input: 'color: black' } }}
+		/>
+	</div>
+</div>
 <div class="grid">
-    <Card href="/" src="https://images.squarespace-cdn.com/content/v1/5892601aff7c50aa7531c614/1635885429629-HE3D3I1QMOT6PR3AUBD1/student+sketching+Spatial+Vis+iPad+app.jpg?format=2500w" >
-        Ahoj
-    </Card>
-    <Card href="/" src="https://images.squarespace-cdn.com/content/v1/5892601aff7c50aa7531c614/1635885429629-HE3D3I1QMOT6PR3AUBD1/student+sketching+Spatial+Vis+iPad+app.jpg?format=2500w" >
-        Ahoj
-    </Card>
-    <Card href="/" src="https://images.squarespace-cdn.com/content/v1/5892601aff7c50aa7531c614/1635885429629-HE3D3I1QMOT6PR3AUBD1/student+sketching+Spatial+Vis+iPad+app.jpg?format=2500w" >
-        Ahoj
-    </Card>
-    <Card href="/" src="https://images.squarespace-cdn.com/content/v1/5892601aff7c50aa7531c614/1635885429629-HE3D3I1QMOT6PR3AUBD1/student+sketching+Spatial+Vis+iPad+app.jpg?format=2500w" >
-        Ahoj
-    </Card>
-    <Card href="/" src="https://images.squarespace-cdn.com/content/v1/5892601aff7c50aa7531c614/1635885429629-HE3D3I1QMOT6PR3AUBD1/student+sketching+Spatial+Vis+iPad+app.jpg?format=2500w" >
-        Ahoj
-    </Card>
-    <Card href="/" src="https://images.squarespace-cdn.com/content/v1/5892601aff7c50aa7531c614/1635885429629-HE3D3I1QMOT6PR3AUBD1/student+sketching+Spatial+Vis+iPad+app.jpg?format=2500w" >
-        Ahoj
-    </Card>
+   <Card src="https://info.zcu.cz/image?obrazek=11912&type=masonry" href="/">Aplikace pro podporu výuky</Card>
 </div>
 
 <style lang="stylus">
@@ -46,4 +54,17 @@
         @media only screen and (min-width 1024px)
             padding 24px
             grid-template-columns: repeat(3, 1fr)
+
+    .log
+        width 100%
+        display flex
+        justify-content center
+        color black
+
+        input
+            color black
+
+        textarea
+            color #000
+
 </style>
