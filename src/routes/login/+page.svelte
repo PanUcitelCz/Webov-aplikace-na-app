@@ -26,6 +26,7 @@
         padding 16px
         border-radius 5px
         max-width 750px
+        margin 0 auto
         
         .nadpis
             display flex

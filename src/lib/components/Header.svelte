@@ -72,7 +72,7 @@
                 background-color #113946
                 transform translateX(-50%)
 
-                @media only screen and (min-width 991px)
+                @media $large-up
                     display none
 
 
@@ -93,7 +93,7 @@
             transform translateY(-100%)
             transition transform .6s ease
 
-            @media only screen and (min-width: 991px)
+            @media $large-up
                 position static
                 transition none
                 transform none
@@ -115,7 +115,7 @@
                 padding-top 108px
                 background #113946
 
-                @media only screen and (min-width: 991px)
+                @media $large-up
                     gap 12px
                     padding 0
                     display flex
@@ -133,7 +133,7 @@
                         background transparent
                         transition background .3s ease
 
-                        @media only screen and (min-width: 991px)
+                        @media $large-up
                             padding 8px
 
 
@@ -153,7 +153,7 @@
         background none
         border none
 
-        @media only screen and (min-width: 991px)
+        @media $large-up
             display none
 
         &.isOpen
