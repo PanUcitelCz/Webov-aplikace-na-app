@@ -1,8 +1,7 @@
 <script lang="ts">
 
 	import Card from "$components/Card.svelte";
-    // heslo k databasi cGCXJCIStjvqWo2A
-    // nazev databaze Web_app
+
 
     import { Auth } from '@supabase/auth-ui-svelte'
 	import { ThemeSupa } from '@supabase/auth-ui-shared'
@@ -33,7 +32,6 @@
 </div>
 
 <style lang="stylus">
-
     .grid
         width 100%
         margin 0 auto
